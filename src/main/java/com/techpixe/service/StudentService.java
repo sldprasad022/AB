@@ -48,5 +48,10 @@ public class StudentService
         return new StudentDTO(student.getId(), student.getName(), student.getBranch());
     }
     
+    private void deleteById(Long id) 
+    {
+    	studentRepository.deleteById(id);
+    }
+    
      
 }
